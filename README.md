@@ -1,40 +1,39 @@
 # Xodo Patches
 
-用于 Morphe 的 Xodo 补丁，只保留 Xodo 及必要构建依赖。
+Xodo-only patches for Morphe, with the required build dependencies.
 
-- 应用包名：`com.xodo.pdf.reader`
-- 推荐版本：**11.3.1**
-- 补丁：Enable Pro，包含所需的签名检查处理。
+- Package: `com.xodo.pdf.reader`
+- Recommended version: **11.3.1**
+- Patch: Enable Pro, with its required signature-check dependency.
 
-## 添加补丁源
+## Add the patch source
 
-[点击添加到 Morphe](https://morphe.software/add-source?github=yzqb/hoodles-morphe-patches-xodo)
+[Add to Morphe](https://morphe.software/add-source?github=yzqb/hoodles-morphe-patches-xodo)
 
-也可在 Morphe 的“来源”中添加：
+Or add this repository URL under **Sources** in Morphe:
 
 ```text
 https://github.com/yzqb/hoodles-morphe-patches-xodo
 ```
 
-[下载补丁包](https://github.com/yzqb/hoodles-morphe-patches-xodo/releases/latest)。本仓库不发布 APK。
+[Download the patch bundle](https://github.com/yzqb/hoodles-morphe-patches-xodo/releases/latest). This repository does not distribute APKs.
 
-## 构建
+## Build
 
-安装 JDK 21 和 JDK 17，设置 GitHub Packages 所需的 `GITHUB_ACTOR`、`GITHUB_TOKEN`，运行：
+Install JDK 21 and JDK 17. Set `GITHUB_ACTOR` and `GITHUB_TOKEN` for GitHub Packages authentication, then run:
 
 ```sh
 ./gradlew :patches:build :patches:verifyBundle
 ```
 
-补丁包位于 `patches/build/libs/patches-1.0.0.mpp`。
+The bundle is written to `patches/build/libs/patches-1.0.0.mpp`.
 
-## 来源与许可证
+## Sources and license
 
-原作者为 Hoo-dles。原始项目是 [hoo-dles/morphe-patches](https://github.com/hoo-dles/morphe-patches)，该仓库目前已被 GitHub 禁用。
+The original author is Hoo-dles. The original project is [hoo-dles/morphe-patches](https://github.com/hoo-dles/morphe-patches), which GitHub has disabled.
 
-本仓库实际从 [lootdev78/morphe-patches-sc](https://github.com/lootdev78/morphe-patches-sc) 提取 Xodo 代码，
-引用提交为 `7dc2ce8db15876203e1b83cacd3a9916fd12b65e`。
+The Xodo code in this repository was extracted from [lootdev78/morphe-patches-sc](https://github.com/lootdev78/morphe-patches-sc) at commit `7dc2ce8db15876203e1b83cacd3a9916fd12b65e`.
 
-本仓库独立维护。2026-11-19 的修改包括提取 Xodo、精简构建配置、将推荐版本改为 11.3.1，以及配置独立补丁源。
+This repository is maintained independently. Changes made on 2026-11-19 extract Xodo, trim the build configuration, recommend version 11.3.1, and configure a separate patch source.
 
-代码采用 [GPL-3.0](LICENSE)，保留原作者版权声明及 [NOTICE](NOTICE)。
+The code is licensed under [GPL-3.0](LICENSE). Original copyright notices and the upstream [NOTICE](NOTICE) are preserved.
