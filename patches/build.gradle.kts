@@ -4,10 +4,10 @@ patches {
     about {
         name = "Xodo Patches"
         description = "Xodo patches maintained by yzqb; based on Hoo-dles Morphe Patches"
-        source = "https://github.com/yzqb/xodo-patches"
+        source = "https://github.com/yzqb/hoodles-morphe-patches-xodo"
         author = "Hoo-dles, yzqb"
-        contact = "https://github.com/yzqb/xodo-patches/issues"
-        website = "https://github.com/yzqb/xodo-patches"
+        contact = "https://github.com/yzqb/hoodles-morphe-patches-xodo/issues"
+        website = "https://github.com/yzqb/hoodles-morphe-patches-xodo"
         license = "GPLv3"
     }
 }
