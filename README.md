@@ -34,6 +34,4 @@ The original author is Hoo-dles. The original project is [hoo-dles/morphe-patche
 
 The Xodo code in this repository was extracted from [lootdev78/morphe-patches-sc](https://github.com/lootdev78/morphe-patches-sc) at commit `7dc2ce8db15876203e1b83cacd3a9916fd12b65e`.
 
-This repository is maintained independently. Changes made on 2026-11-19 extract Xodo, trim the build configuration, recommend version 11.3.1, and configure a separate patch source.
-
 The code is licensed under [GPL-3.0](LICENSE). Original copyright notices and the upstream [NOTICE](NOTICE) are preserved.
