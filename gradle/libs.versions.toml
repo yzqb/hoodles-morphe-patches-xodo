@@ -1,0 +1,9 @@
+[versions]
+morphe-patcher = "1.11.0"
+morphe-patches-library = "1.6.0"
+smali = "d92701d947"
+guava = "33.6.0-jre"
+
+[libraries]
+morphe-patches-library = { module = "app.morphe:morphe-patches-library", version.ref = "morphe-patches-library" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
