@@ -23,7 +23,7 @@ https://github.com/yzqb/hoodles-morphe-patches-xodo
 安装 JDK 21 和 JDK 17，设置 GitHub Packages 所需的 `GITHUB_ACTOR`、`GITHUB_TOKEN`，运行：
 
 ```sh
-./gradlew :patches:build
+./gradlew :patches:build :patches:verifyBundle
 ```
 
 补丁包位于 `patches/build/libs/patches-1.0.0.mpp`。

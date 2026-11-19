@@ -22,7 +22,7 @@ jobs:
         env:
           GITHUB_ACTOR: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew :patches:build --no-daemon
+        run: ./gradlew :patches:build :patches:verifyBundle --no-daemon
       - uses: actions/upload-artifact@v4
         with:
           name: xodo-patches
